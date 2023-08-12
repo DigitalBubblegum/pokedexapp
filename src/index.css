@@ -1,13 +1,51 @@
+/* index.css */
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #e0e0e0;
+  /* Gray background */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pokedex {
+  background-color: #ffffff;
+  /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.screen {
+  background-color: #f0f0f0;
+  /* Light gray background */
+  border: 2px solid #cccccc;
+  /* Slightly darker gray border */
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.screen img {
+  max-width: 100%;
+  height: auto;
+}
+
+.controls button {
+  background-color: #ff4040;
+  /* Reddish color for buttons */
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.controls button:hover {
+  background-color: #cc3232;
+  /* Darker red for hover effect */
 }
