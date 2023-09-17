@@ -1,6 +1,6 @@
 import axios from "axios";
 var url = "https://pokeapi.co/api/v2/pokemon";
-
+const logger = require('./utils/logger')
 // const handleClick = () =>{
 //   const promise = axios.get(`${url}/1`)
 //   console.log(promise);
@@ -15,19 +15,23 @@ var url = "https://pokeapi.co/api/v2/pokemon";
 function App() {
   //functions
   const handleClick = () =>{
-    console.log('clicked');
+    // console.log('clicked');
+    logger.infor('clicked')
     const a1 = axios
       .get(`${url}/1`)
       .then((response) => {
         // const { id, name } = response.data;
         const id = response.data.id
         const name = response.data.name
-        console.log(`Name: ${name}, ID: ${id}`);
+        // console.log(`Name: ${name}, ID: ${id}`)
+        logger.info(`Name: ${name}, ID: ${id}`)
       })
       .catch((error) => {
-        console.error("Error fetching data:", error);
+        // console.error("Error fetching data:", error);
+        logger.error("Error fetching data:", error);
       });
-    console.log(a1);
+    // console.log(a1);
+    logger.info(a1);
   }
   return (
     <div className="pokedex">
