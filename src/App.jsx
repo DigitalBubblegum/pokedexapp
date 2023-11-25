@@ -6,7 +6,7 @@ function App() {
   const pokemonSingle = useSelector(state => state.pokemonSingle)
   return (
     <div className='mainWindow'>
-      <h1>Pokedex App</h1>
+      <h1 className='mainAppName'>Pokedex App</h1>
       <Searchbar pokemonSingle={pokemonSingle}/>
       <PokeInformation pokemonSingle={pokemonSingle}/>
     </div>

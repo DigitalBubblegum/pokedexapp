@@ -7,8 +7,13 @@ const getAllPokemon = async() => {
 }
 
 const findSinglePokemon = async(searchVal) => {
-    const response = await axios.get(`${baseUrl}${searchVal}`)
-    return response.data
+    try{
+        const response = await axios.get(`${baseUrl}${searchVal}`)
+        return response.data
+    }
+    catch(error){
+        console.log(error.message)
+    }
 }
 
 export default {getAllPokemon,findSinglePokemon}

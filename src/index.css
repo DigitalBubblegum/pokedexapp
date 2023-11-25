@@ -18,3 +18,21 @@
   padding: 10px;
   justify-content: space-evenly;
 }
+.mainAppName{
+  color: white;
+}
+.defaultPokemonInformation{
+  font-size: large;
+  font-weight: bold;
+}
+.pokemon-image{
+  border: 5px solid black;
+}
+.dexViewMain{
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  justify-content: space-around;
+}
