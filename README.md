@@ -1,3 +1,3 @@
-#Simple pokedex 
+# Simple pokedex
 
-this is a project to build a simple pokedex with the pokeApi.
+This is a project to build a simple pokedex with the pokeApi.
