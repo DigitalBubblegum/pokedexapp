@@ -1,9 +1,14 @@
 import axios from 'axios'
-const baseUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151'
+const baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
 const getAllPokemon = async() => {
-    const response = await axios.get(baseUrl)
+    const response = await axios.get(`${baseUrl}?limit=151`)
     // console.log(response.data)
     return response.data
 }
 
-export default {getAllPokemon}
+const findSinglePokemon = async(searchVal) => {
+    const response = await axios.get(`${baseUrl}${searchVal}`)
+    return response.data
+}
+
+export default {getAllPokemon,findSinglePokemon}

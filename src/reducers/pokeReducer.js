@@ -10,7 +10,7 @@ const pokeSlice = createSlice({
             const content = action.payload
             // console.log('content',content)
             return content.results
-        }
+        },
     }
 })
 export const {fetchAllPokemon} = pokeSlice.actions

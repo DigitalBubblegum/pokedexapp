@@ -6,6 +6,7 @@ import PokemonList from './components/PokemonList'
 const logger = require('./utils/logger')
 function App() {
   const pokemon = useSelector(state => state.pokemon)
+  const pokemonSingle = useSelector(state => state.pokemonSingle)
   const dispatch = useDispatch()
   useEffect(() => {
     // dispatch(fetchAll())
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className='mainWindow'>
       <h1>Pokedex App</h1>
-      <Searchbar/>
+      <Searchbar pokemonSingle={pokemonSingle}/>
       <PokemonList handleClick={handleClick} pokemon={pokemon}/>
     </div>
   )

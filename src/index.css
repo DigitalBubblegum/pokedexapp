@@ -5,3 +5,6 @@
 .pokedexSearchBar{
   background-color: #DC0A2D;
 }
+.pokemonSearchName{
+  border-radius: 30px;
+}
