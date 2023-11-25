@@ -10,3 +10,11 @@
 .pokemonSearchName{
   border-radius: 30px;
 }
+.about-iwh{
+  background-color: #DC0A2D;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  justify-content: space-evenly;
+}
