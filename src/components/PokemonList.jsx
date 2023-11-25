@@ -1,4 +1,4 @@
-const Pokedex = ({handleClick,pokemon}) => {
+const PokemonList = ({handleClick,pokemon}) => {
     return (
       <div className="pokedex">
         <div className="screen">
@@ -19,4 +19,4 @@ const Pokedex = ({handleClick,pokemon}) => {
     );
 
 }
-export default Pokedex
+export default PokemonList

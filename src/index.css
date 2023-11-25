@@ -1,47 +1,7 @@
-/* index.css */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f2f2f2;
-}
-
-.pokedex {
-  background-color: #ffffff;
+.mainWindow {
+  background-color: #DC0A2D;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 20px;
-  text-align: center;
 }
-
-.screen {
-  background-color: #f5f5f5;
-  border: 2px solid #dcdcdc;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.screen img {
-  max-width: 100%;
-  height: auto;
-}
-
-.controls button {
-  background-color: #ee1515;
-  /* Red color similar to Pokédex */
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  padding: 8px 12px;
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-.controls button:hover {
-  background-color: #b70c0c;
-  /* Darker red for hover effect */
+.pokedexSearchBar{
+  background-color: #DC0A2D;
 }
