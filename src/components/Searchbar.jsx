@@ -16,7 +16,7 @@ const Searchbar = ({pokemonSingle}) => {
                 <input name="pokemonSearchName" className="pokemonSearchName" placeholder="enter pokemon name"/>
                 <button>Search</button>
             </form>
-            {pokemonSingle === null?null:pokemonSingle.name}
+            {/* {pokemonSingle === null?null:pokemonSingle.name} */}
         </div>
         
     )

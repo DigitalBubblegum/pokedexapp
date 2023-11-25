@@ -1,6 +1,8 @@
 .mainWindow {
   background-color: #DC0A2D;
   border-radius: 10px;
+  height: 100vh;
+  width: 100vw;
 }
 .pokedexSearchBar{
   background-color: #DC0A2D;

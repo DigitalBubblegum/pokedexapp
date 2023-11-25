@@ -1,25 +1,14 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { useEffect } from 'react'
-import { fetchAll } from './reducers/pokeReducer'
+import { useSelector } from 'react-redux'
 import Searchbar from './components/Searchbar'
-import PokemonList from './components/PokemonList'
-const logger = require('./utils/logger')
+import PokeInformation from './components/PokeInformation'
+// const logger = require('./utils/logger')
 function App() {
-  const pokemon = useSelector(state => state.pokemon)
   const pokemonSingle = useSelector(state => state.pokemonSingle)
-  const dispatch = useDispatch()
-  useEffect(() => {
-    // dispatch(fetchAll())
-  },[])
-  //functions
-  const handleClick = () =>{
-    logger.info('click')
-  }
   return (
     <div className='mainWindow'>
       <h1>Pokedex App</h1>
       <Searchbar pokemonSingle={pokemonSingle}/>
-      <PokemonList handleClick={handleClick} pokemon={pokemon}/>
+      <PokeInformation pokemonSingle={pokemonSingle}/>
     </div>
   )
 }
