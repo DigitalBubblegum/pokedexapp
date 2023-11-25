@@ -12,7 +12,7 @@
 }
 .about-iwh{
   background-color: #DC0A2D;
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   align-items: flex-start;
   padding: 10px;
@@ -29,10 +29,13 @@
   border: 5px solid black;
 }
 .dexViewMain{
-  border: 5px solid black;
+  /* border: 5px solid black; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 10px;
   justify-content: space-around;
+}
+.pokemon-name{
+  text-align: center;
 }
