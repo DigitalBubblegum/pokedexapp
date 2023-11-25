@@ -1,53 +1,34 @@
-import axios from "axios";
-var url = "https://pokeapi.co/api/v2/pokemon";
+import { useDispatch, useSelector } from 'react-redux'
+import { pokemonService } from './services/fetchPokemon'
+import { useEffect } from 'react'
+import { fetchAll } from './reducers/pokeReducer'
 const logger = require('./utils/logger')
-// const handleClick = () =>{
-//   const promise = axios.get(`${url}/1`)
-//   console.log(promise);
-//   const promise2 = axios.get(`${url}/2`)
-//   console.log(promise2)
-//   console.log('button clicked')
-// }
-// const a1 = axios.get(`${url}/1`)
-// const a2 = axios.get(`${url}/2`)
-// console.log(a1)
-// console.log(a2)
 function App() {
+  const pokemon = useSelector(state => state.pokemon)
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(fetchAll())
+  },[])
   //functions
   const handleClick = () =>{
-    // console.log('clicked');
-    logger.infor('clicked')
-    const a1 = axios
-      .get(`${url}/1`)
-      .then((response) => {
-        // const { id, name } = response.data;
-        const id = response.data.id
-        const name = response.data.name
-        // console.log(`Name: ${name}, ID: ${id}`)
-        logger.info(`Name: ${name}, ID: ${id}`)
-      })
-      .catch((error) => {
-        // console.error("Error fetching data:", error);
-        logger.error("Error fetching data:", error);
-      });
-    // console.log(a1);
-    logger.info(a1);
+    console.log('click')
   }
   return (
-    <div className="pokedex">
-      <div className="screen">
-        <img src="pokemon_image.png" alt="Pokemon" />
+    <div className='pokedex'>
+      <div className='screen'>
+        <img src='pokemon_image.png' alt='Pokemon' />
       </div>
-      <div className="controls">
-        <button className="fetch" onClick={handleClick}>
+      <div className='controls'>
+        <button className='fetch' onClick={handleClick}>
           Click me
         </button>
-        {/* <button className="next-btn" onClick={() => console.log("clk")}>
-          Next
-        </button> */}
       </div>
+      <ul>
+        {console.log(typeof pokemon)}
+        {pokemon.map((po)=><li>{po.name}</li>)}
+      </ul>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
