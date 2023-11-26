@@ -9,15 +9,30 @@ const dexSlice = createSlice({
         fetchSinglePokemon(state,action){
             const content = action.payload
             return content
+        },
+        resetPokemon(state,action){
+            return null
         }
     }
 })
-export const {fetchSinglePokemon} = dexSlice.actions
+export const {fetchSinglePokemon,resetPokemon} = dexSlice.actions
 export const fetchSingle = (searchVal) => {
     return async dispatch => {
         const pokemonInfo = await pokeService.findSinglePokemon(searchVal)
         // console.log('fetchSingle',pokemonInfo)
-        pokemonInfo === 'Not Found'? dispatch(notiSetReset(pokemonInfo)) : dispatch(fetchSinglePokemon(pokemonInfo))
+        // pokemonInfo === 'Not Found'? dispatch(notiSetReset(pokemonInfo)) : dispatch(fetchSinglePokemon(pokemonInfo))
+        if(pokemonInfo === 'Not Found'){
+            dispatch(notiSetReset(pokemonInfo))
+            dispatch(resetSingle())
+        }
+        else{
+            dispatch(fetchSinglePokemon(pokemonInfo))
+        }
+    }
+}
+export const resetSingle = () => {
+    return async dispatch => {
+        dispatch(resetPokemon())
     }
 }
 export default dexSlice.reducer

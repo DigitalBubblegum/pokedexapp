@@ -1,7 +1,7 @@
 const PokeInformation = ({pokemonSingle}) => {
     return(
         <div>
-            { pokemonSingle === null ? <p className="defaultPokemonInformation">enter a Pokémon to get started</p> : 
+            { pokemonSingle === null ? <p className="defaultPokemonInformation">enter a valid Pokémon name to get information Ex: "pikachu" or "charizard" </p> : 
             <>
             <h2 className="pokemon-name">{pokemonSingle.name.toUpperCase()}</h2>
             <div className="dexViewMain">
