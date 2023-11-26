@@ -7,7 +7,9 @@ function App() {
   return (
     <div className='mainWindow'>
       <h1 className='mainAppName'>Pokedex App</h1>
+      <br/>
       <Searchbar/>
+      <br/>
       <PokeInformation pokemonSingle={pokemonSingle}/>
     </div>
   )

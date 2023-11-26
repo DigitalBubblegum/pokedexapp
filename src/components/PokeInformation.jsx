@@ -3,7 +3,7 @@ const PokeInformation = ({pokemonSingle}) => {
         <div>
             { pokemonSingle === null ? <p className="defaultPokemonInformation">enter a pokemon to get started</p> : 
             <>
-            <h1 className="pokemon-name">{pokemonSingle.name.toUpperCase()}</h1>
+            <h2 className="pokemon-name">{pokemonSingle.name.toUpperCase()}</h2>
             <div className="dexViewMain">
                 <img src={pokemonSingle.sprites.other.home.front_default} alt={pokemonSingle.name} className="pokemon-image"></img>
                 <div className="dexInfoContent">
