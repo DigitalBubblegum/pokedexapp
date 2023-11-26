@@ -6,7 +6,7 @@ const PokeInformation = ({pokemonSingle}) => {
             <h1 className="pokemon-name">{pokemonSingle.name.toUpperCase()}</h1>
             <div className="dexViewMain">
                 <img src={pokemonSingle.sprites.other.home.front_default} alt={pokemonSingle.name} className="pokemon-image"></img>
-                <div>
+                <div className="dexInfoContent">
                     <h2>About</h2>
                     <div className="about-iwh">
                         <h3>ID: {pokemonSingle.id}</h3>
