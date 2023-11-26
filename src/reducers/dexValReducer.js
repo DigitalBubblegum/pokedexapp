@@ -1,4 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit'
+import { notiSetReset } from './notificationReducer'
 import pokeService from '../services/fetchPokemon'
 const initialState = null
 const dexSlice = createSlice({
@@ -16,7 +17,7 @@ export const fetchSingle = (searchVal) => {
     return async dispatch => {
         const pokemonInfo = await pokeService.findSinglePokemon(searchVal)
         // console.log('fetchSingle',pokemonInfo)
-        dispatch(fetchSinglePokemon(pokemonInfo))
+        pokemonInfo === 'Not Found'? dispatch(notiSetReset(pokemonInfo)) : dispatch(fetchSinglePokemon(pokemonInfo))
     }
 }
 export default dexSlice.reducer

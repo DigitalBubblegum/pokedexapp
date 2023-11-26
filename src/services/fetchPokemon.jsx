@@ -14,7 +14,8 @@ const findSinglePokemon = async(searchVal) => {
         return {...response.data,flavorText:flavorText}
     }
     catch(error){
-        console.log(error.message)
+        // console.log(error.response.data)
+        return error.response.data
     }
 }
 
