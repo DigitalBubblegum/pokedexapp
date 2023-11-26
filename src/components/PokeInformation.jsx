@@ -8,6 +8,7 @@ const PokeInformation = ({pokemonSingle}) => {
                 <img src={pokemonSingle.sprites.other.home.front_default} alt={pokemonSingle.name} className="pokemon-image"></img>
                 <div className="dexInfoContent">
                     <h2>About</h2>
+                    <h4>{pokemonSingle.flavorText}</h4>
                     <div className="about-iwh">
                         <h3>ID: {pokemonSingle.id}</h3>
                         <h3>Height: {pokemonSingle.height}</h3>
@@ -23,6 +24,7 @@ const PokeInformation = ({pokemonSingle}) => {
                     </ul>
                 </div>
             </div>
+            
             </> }
         </div>
     )

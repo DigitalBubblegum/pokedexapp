@@ -9,7 +9,9 @@ const getAllPokemon = async() => {
 const findSinglePokemon = async(searchVal) => {
     try{
         const response = await axios.get(`${baseUrl}${searchVal}`)
-        return response.data
+        const speciesInfo = await axios.get(response.data.species.url)
+        const flavorText = speciesInfo.data.flavor_text_entries[0].flavor_text
+        return {...response.data,flavorText:flavorText}
     }
     catch(error){
         console.log(error.message)

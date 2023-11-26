@@ -15,7 +15,7 @@ export const {fetchSinglePokemon} = dexSlice.actions
 export const fetchSingle = (searchVal) => {
     return async dispatch => {
         const pokemonInfo = await pokeService.findSinglePokemon(searchVal)
-        // console.log('fetchSingle',pokemonInfo)
+        console.log('fetchSingle',pokemonInfo)
         dispatch(fetchSinglePokemon(pokemonInfo))
     }
 }
