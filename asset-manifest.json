@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pokedexapp/static/css/main.d7d19172.css",
+    "main.js": "/pokedexapp/static/js/main.805dd76c.js",
+    "index.html": "/pokedexapp/index.html",
+    "main.d7d19172.css.map": "/pokedexapp/static/css/main.d7d19172.css.map",
+    "main.805dd76c.js.map": "/pokedexapp/static/js/main.805dd76c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7d19172.css",
+    "static/js/main.805dd76c.js"
+  ]
+}
