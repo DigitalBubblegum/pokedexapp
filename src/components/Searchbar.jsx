@@ -6,7 +6,8 @@ const Searchbar = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         // console.log(e.target.pokemonSearchName.value)
-        const content = e.target.pokemonSearchName.value
+        const content = e.target.pokemonSearchName.value.toLowerCase()
+        console.log(content)
         e.target.pokemonSearchName.value =''
         dispatch(fetchSingle(content))
     }
