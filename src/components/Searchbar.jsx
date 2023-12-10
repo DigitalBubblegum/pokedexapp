@@ -12,7 +12,7 @@ const Searchbar = () => {
         dispatch(fetchSingle(content))
     }
     return(
-        <div className="pokedexSearchBar">
+        <div className='items-center'>
             <form onSubmit={handleSubmit}>
                 <input name="pokemonSearchName" className="pokemonSearchName" placeholder="enter pokemon name"/>
                 <button>Search</button>
