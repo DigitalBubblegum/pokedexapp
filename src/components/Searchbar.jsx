@@ -12,10 +12,10 @@ const Searchbar = () => {
         dispatch(fetchSingle(content))
     }
     return(
-        <div className='items-center'>
+        <div className='flex justify-center h-screen'>
             <form onSubmit={handleSubmit}>
                 <input name="pokemonSearchName" className="pokemonSearchName" placeholder="enter pokemon name"/>
-                <button>Search</button>
+                <button className="bg-red-900 rounded-lg">Search</button>
             </form>
         </div>
         
