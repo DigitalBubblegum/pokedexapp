@@ -8,7 +8,7 @@ function App() {
   const notiData = useSelector(state => state.notification)
   return (
     <div className='bg-red-800 h-screen w-screen overflow-auto'>
-      <h1 className='text-4xl text-center p-8 font-bold '><span className='transition hover:text-white'>Pokédex</span><span className='text-white transition hover:text-green-500'>App</span></h1>
+      <h1 className='text-4xl text-center p-8 font-bold '>Pokédex<span className='text-white transition hover:text-green-500'>App</span></h1>
       <br/>
       <Searchbar/>
       <br/>

@@ -18,7 +18,7 @@ const Searchbar = () => {
     return(
         <div>
             <form onSubmit={handleSubmit} className="flex justify-center items-center p-5">
-                <input name="pokemonSearchName" className="rounded-full placeholder-gray-500 placeholder" placeholder="enter pokemon name"/>
+                <input name="pokemonSearchName" className="rounded-full px-4 py-2" placeholder="enter pokemon name"/>
                 <div className="px-4"></div>
                 <div className='px-4 bg-red-900 rounded-full py-2 hover:bg-green-500 hover:-translate-y-0.5 transform transition active:bg-green-700'>
                     <button>Search</button>
