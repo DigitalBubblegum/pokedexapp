@@ -4,18 +4,18 @@ const PokeInformation = ({pokemonSingle}) => {
             { !pokemonSingle ? <p className="text-center font-semibold text-white">enter a valid Pokémon name to get information Ex: "pikachu" or "charizard" </p> : 
             <div className="flex-col">
             <div className="flex justify-center">
-                <h2 className="text-4xl text-white font-bold transition hover:text-green-500">{pokemonSingle.name.toUpperCase()}</h2>
+                <h2 className="text-4xl font-extrabold text-white transition hover:text-green-500">{pokemonSingle.name.toUpperCase()}</h2>
             </div>
             <div className="py-5"></div>
             <div className="flex justify-evenly">
                 <div>
-                    <img src={pokemonSingle.sprites.other.home.front_default} alt={pokemonSingle.name} className="bg-slate-100 rounded-3xl transition hover:bg-green-500 shadow-2xl border-solid border-2 border-black"></img>
+                    <img src={pokemonSingle.sprites.other.home.front_default} alt={pokemonSingle.name} className="bg-slate-100 rounded-3xl transition hover:bg-green-500 shadow-2xl"></img>
                 </div>
                 <div>
-                    <h2 className="text-xl font-semibold text-white">About</h2>
+                    <h2 className="text-2xl font-bold text-white">About</h2>
                     <h4 className="text-xl text-white">{pokemonSingle.flavorText}</h4>
                     <div className="py-5"></div>
-                    <div className="flex justify-evenly bg-slate-100 rounded-3xl border-solid border-2 border-black">
+                    <div className="flex justify-around bg-slate-100 rounded-3xl ">
                         <div>
                         <h2 className="font-bold">Info</h2>
                         <h3 className="font-semibold">ID: <span className="transition-colors hover:text-green-500">{pokemonSingle.id}</span></h3>
