@@ -2,7 +2,7 @@ const PokeInformation = ({pokemonSingle}) => {
     return(
         <div>
             { !pokemonSingle ? <p className="text-center font-semibold text-white">enter a valid Pokémon name to get information Ex: "pikachu" or "charizard" </p> : 
-            <div className="flex-col">
+            <div className="flex-col p-6">
                 <div className="flex justify-center">
                     <h2 className="text-4xl font-extrabold text-white transition hover:text-green-500">{pokemonSingle.name.toUpperCase()}</h2>
                 </div>
