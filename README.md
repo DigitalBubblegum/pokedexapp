@@ -1,6 +1,6 @@
 # Pokédex App
 
-This Pokédex app is a web application built with React with TailwindCSS. It allows users to browse and search for information about various Pokémon using data fetched from the [PokeAPI](https://pokeapi.co/).
+This Pokédex app is a web application built with React, TailwindCSS & Redux. It allows users to browse and search for information about various Pokémon using data fetched from the [PokeAPI](https://pokeapi.co/).
 
 ## Installation
 
@@ -46,6 +46,7 @@ Once you have installed the dependencies, you can run the Pokédex app locally o
 
 - React
 - TailwindCSS
+- Redux
 - PokeAPI
 
 ## Contributing
