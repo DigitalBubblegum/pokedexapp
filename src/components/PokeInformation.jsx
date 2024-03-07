@@ -52,7 +52,7 @@ const PokeInformation = ({pokemonSingle}) => {
                         <h2 className="text-2xl font-bold text-white">About</h2>
                         <h4 className="text-xl text-white">{pokemonSingle.flavorText}</h4>
                         <div className="py-5"></div>
-                        <div className="flex justify-around bg-slate-100 rounded-3xl">
+                        <div className="flex justify-self-auto bg-slate-100 rounded-3xl p-4">
                         <div>
                             <h2 className="font-bold">Info</h2>
                             <div className="py-3"></div>
@@ -62,14 +62,14 @@ const PokeInformation = ({pokemonSingle}) => {
                             <div className="py-3"></div>
                             <h3 className="font-semibold">Weight: <span className="transition-colors hover:text-green-500">{pokemonSingle.weight}</span></h3>
                         </div>
-                        <div className="py-5"></div>
+                        <div className="px-5"></div>
                         <div>
                             <h3 className="font-bold">Types</h3>
                             <ul>
                                 {pokemonSingle.types.map(type => <li key={type.slot}><span className="transition-colors hover:text-green-500 font-semibold">{type.type.name}</span></li>)}
                             </ul>
                         </div>
-                        <div className="py-5"></div>
+                        <div className="px-5"></div>
                         <div>
                             <h2 className="font-bold">Stats</h2>
                             <ul>
