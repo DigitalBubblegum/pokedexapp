@@ -47,7 +47,7 @@ const PokeInformation = ({pokemonSingle}) => {
                     <div className="max-w-md m-auto">
                         <img src={pokemonSingle.sprites.other.home.front_default} alt={pokemonSingle.name} className="bg-slate-100 rounded-3xl transition hover:bg-green-500 shadow-2xl"></img>
                     </div>
-                    <div className="px-6"></div>
+                    <div className="py-6"></div>
                     <div>
                         <h2 className="text-2xl font-bold text-white">About</h2>
                         <h4 className="text-xl text-white">{pokemonSingle.flavorText}</h4>
