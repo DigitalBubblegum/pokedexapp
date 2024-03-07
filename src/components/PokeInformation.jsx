@@ -78,6 +78,7 @@ const PokeInformation = ({pokemonSingle}) => {
                         </div>
                     </div>
                     </div>
+                    <div className="py-5"></div>
                 </div>
             </div> }
         </div>
