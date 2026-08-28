@@ -7,7 +7,7 @@ function App() {
   const pokemonSingle = useSelector(state => state.pokemonSingle)
   const notiData = useSelector(state => state.notification)
   return (
-    <div className='bg-red-700 h-screen w-screen overflow-auto'>
+    <div className='bg-gradient-to-b from-red-600 via-red-700 to-red-900 h-screen w-screen overflow-auto'>
       <h1 className='text-4xl text-center p-8 font-bold '>Pokédex<span className='text-white transition hover:text-green-500'>App</span></h1>
       <br/>
       <Searchbar/>
